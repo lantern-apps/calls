@@ -10,21 +10,14 @@ namespace Calls.SourceGeneration;
 
 internal static class SyntaxNodeExtensions
 {
-    //private static readonly SymbolDisplayFormat s_metadataDisplayFormat = SymbolDisplayFormat.QualifiedNameArityFormat.AddCompilerInternalOptions(SymbolDisplayCompilerInternalOptions.UsePlusForNestedTypes);
-
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool IsPartial(this MemberDeclarationSyntax typeDeclaration) => typeDeclaration.Modifiers.Any(m => m.IsKind(SyntaxKind.PartialKeyword));
     
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool IsPublic(this MemberDeclarationSyntax typeDeclaration) => typeDeclaration.Modifiers.Any(m => m.IsKind(SyntaxKind.PublicKeyword));
 
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool IsNested(this MemberDeclarationSyntax typeDeclaration) => typeDeclaration.Parent is TypeDeclarationSyntax;
 
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool IsAbstract(this MemberDeclarationSyntax typeDeclaration) => typeDeclaration.Modifiers.Any(m => m.IsKind(SyntaxKind.AbstractKeyword));
 
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static bool IsStatic(this MemberDeclarationSyntax typeDeclaration) => typeDeclaration.Modifiers.Any(m => m.IsKind(SyntaxKind.StaticKeyword));
 
     public static bool IsDerivedFrom(this TypeDeclarationSyntax typeDeclaration, string baseTypeName, CancellationToken cancellationToken)
@@ -47,7 +40,6 @@ internal static class SyntaxNodeExtensions
             }
             else
             {
-                Debug.Fail("Unhandle type");
                 continue;
             }
 
