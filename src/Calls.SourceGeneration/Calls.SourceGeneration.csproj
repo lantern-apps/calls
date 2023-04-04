@@ -8,6 +8,14 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<AnalyzerLanguage>cs</AnalyzerLanguage>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+
+		<Version>1.0.0-beta.1</Version>
+		<Description>source generation mediator implementation, native aot reflection method invoke.</Description>
+		<RepositoryUrl>https://github.com/lantern-apps/calls</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/lantern-apps/calls</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<PackageTags>call;method call;mediator;native aot;command;event;source generation</PackageTags>
 	</PropertyGroup>
 	
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -16,10 +24,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.5.0" PrivateAssets="all" />
-		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
+		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" PrivateAssets="all" />
 	</ItemGroup>
 
 	<ItemGroup>

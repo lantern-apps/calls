@@ -6,6 +6,14 @@
 		<Nullable>enable</Nullable>
 		<LangVersion>11</LangVersion>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+		<Version>1.0.0-beta.1</Version>
+		<Description>source generation mediator implementation, native aot reflection method invoke.</Description>
+		<RepositoryUrl>https://github.com/lantern-apps/calls</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/lantern-apps/calls</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<PackageTags>call;method call;mediator;native aot;command;event;source generation</PackageTags>
 	</PropertyGroup>
 
 	<ItemGroup>
