@@ -1,7 +1,6 @@
 ﻿using Calls;
 using Microsoft.Extensions.DependencyInjection;
 
-
 var call = new ServiceCollection()
     .AddSingleton<ICall, MethodCall>()
     .AddScoped<Handler>()

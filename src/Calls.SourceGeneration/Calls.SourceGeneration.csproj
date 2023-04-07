@@ -5,11 +5,12 @@
 		<LangVersion>11</LangVersion>
 		<Nullable>enable</Nullable>
 		<IsPackable>true</IsPackable>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<AnalyzerLanguage>cs</AnalyzerLanguage>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
 
-		<Version>1.0.0-beta.1</Version>
+		<Version>1.0.0-beta.2</Version>
 		<Description>source generation mediator implementation, native aot reflection method invoke.</Description>
 		<RepositoryUrl>https://github.com/lantern-apps/calls</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/lantern-apps/calls</PackageProjectUrl>
@@ -17,7 +18,7 @@
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
 		<PackageTags>call;method call;mediator;native aot;command;event;source generation</PackageTags>
 	</PropertyGroup>
-	
+
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<DefineConstants>$(DefineConstants);Test</DefineConstants>
 	</PropertyGroup>
